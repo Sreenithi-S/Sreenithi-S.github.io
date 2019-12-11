@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="moviestyle.css">
+    <script src="moviestyle.js"></script>
+    <title>Edit Movie</title>
+
+</head>
+<body>
+    <div class="topnav">    
+        <div class="home">Movie Cruiser</div>
+        <img src="https://images.vexels.com/media/users/3/130323/isolated/preview/0201b398e2cc4360cbd1cd40d8d3755d-filmstrip-cinema-icon-by-vexels.png">
+        <a href="movie-list-admin.html">Movie</a>
+    </div> 
+        
+    <h1>Edit Movie</h1>
+    <div class="body-content-colour">
+        <form action="edit-movie-status.html" onsubmit="return validateForm()"name="editmovie" method="post">
+        <div class="form-field-spacing">
+            <label for="name1">Title</label>
+            <input type="text" class="text-box text-box-title" name="title" id="name1">
+        </div>
+        <div>
+        <div class="form-field-spacing">
+
+            <label for="Gross$">Gross($)</label>
+            <input type="text" class="text-box" name="boxOffice" id="boxOffice">
+        </div>
+        <div class="form-field-spacing">
+            <label for="active">Active</label>
+            <div>
+            <input class="radio" type="radio" name="active" value="yes">yes
+            <input class="radio" type='radio' name="active" value="no">no
+            </div>
+        </div>
+        <div class="form-field-spacing">
+            <lable for="dateOfLaunch">Date of Launch</lable>
+            <input type="text" class="text-box" name="dateOfLaunch">
+        </div>
+        <div class="form-field-spacing">
+            <label for="genre">Genre</label>
+            <div>
+            <select name="genre" class="dropdown">
+             <option value="0">Superhero</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <optioin value="Super Hero">Super Hero</optioin>
+            <option value="Romance">Romance</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Thriller">Thriller</option>
+            </select>
+            </div>
+        </div>
+    </div>
+   <div class="form-field-spacing">
+       <input type="checkbox" name="has teaser">
+       <label for="has teaser">teaser</label>
+   </div>
+   <div>
+       <input type="submit"  class="button success-button" value="Save">
+   </div>
+    </form>
+    </div>
+ <div class="footer">
+     <h3>CopyRight©2019</h3>
+ </div>           
+</body>
+</html>
